@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+/*red: #e66053;
+black: #4E4F4A;
+cream: #F6E9DC;*/
+
+body {
+  background-color: #e66053;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  color: #4E4F4A;
+  display: grid;
+  justify-content: center;
+  padding-top: 70px;
+}

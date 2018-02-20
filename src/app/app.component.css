@@ -1,0 +1,59 @@
+.calendar {
+  display: grid;
+  grid-template-columns: 1fr 14fr 1fr;
+}
+button {
+  background-color: #F6E9DC;
+  border: 1px solid #e66053;
+  color: #4E4F4A;
+  cursor: pointer;
+  outline: 0;
+  font-size: 1.5rem;
+}
+button:hover {
+  background-color: #4E4F4A;
+  color: #F6E9DC;
+}
+table {
+  background-color: #F6E9DC;
+  border-spacing: 0;
+  display: inline-block;
+}
+table caption {
+  background-color: #F6E9DC;
+  border: 1px solid #e66053;
+}
+table caption h1 {
+  background-color: #4E4F4A;
+  color: #F6E9DC;
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: normal;
+  letter-spacing: .1em;
+  padding: .5rem 2rem;
+  text-transform: uppercase;
+  margin: .5rem;
+}
+th, td {
+  border: 1px solid #e66053;
+  padding: .5rem;
+  width: 10vh;
+}
+td {
+  font-size: 40px;
+  padding: 5px;
+  text-align: center;
+}
+td:hover {
+  background-color: #e66053;
+  cursor: pointer;
+}
+td:nth-child(6),
+td:nth-child(7){
+  color: #e66053;
+}
+td:nth-child(6):hover,
+td:nth-child(7):hover{
+  background-color: #e66053;
+  color: #F6E9DC;
+}
