@@ -17,7 +17,6 @@ button:hover {
 table {
   background-color: #F6E9DC;
   border-spacing: 0;
-  display: inline-block;
 }
 table caption {
   background-color: #F6E9DC;
@@ -37,12 +36,11 @@ table caption h1 {
 th, td {
   border: 1px solid #e66053;
   padding: .3rem;
-  width: 11vmin;
+  width: 5.1rem;
 }
 td {
   font-size: 2.2rem;
   text-align: center;
-  height: 7vh;
 }
 td:hover {
   background-color: #e66053;

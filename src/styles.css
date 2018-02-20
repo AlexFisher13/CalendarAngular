@@ -7,7 +7,6 @@ cream: #F6E9DC;*/
 html {
   font-size: 22px;
 }
-
 body {
   background-color: #e66053;
   font-family: 'Montserrat';
@@ -17,3 +16,19 @@ body {
   justify-content: center;
   padding-top: 10vh;
 }
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 10px;
+  }
+}
+
