@@ -8,7 +8,7 @@ import {DateService} from "../services/date.service";
   providers: [DateService]
 })
 export class AppComponent {
-  month =[[]];
+  month =[];
   date = new Date();
 
   constructor(private dateService: DateService) {}
@@ -18,8 +18,11 @@ export class AppComponent {
   }
 
   showMonth() {
+    console.log(this.month);
+    this.month = [];
+
     this.date = new Date(this.date.getFullYear(), this.date.getMonth() + 1, 1);
-    this.month = this.dateService.getMonth(this.date);
+    this.ngOnInit();
   }
 
 }

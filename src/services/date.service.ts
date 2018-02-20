@@ -3,9 +3,9 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class DateService {
 
-  month = [];
-
   getMonth(date) {
+
+    let month = [];
     let week = [];
     let endPrevMonth;
     let startDate = new Date(date.getFullYear(), date.getMonth(), 1);
@@ -17,7 +17,6 @@ export class DateService {
       } else {
         endPrevMonth = startDate.getDay();
       }
-      console.log(startDate);
       for (let i = 1; i < endPrevMonth; i++) {
         week.push("");
       }
@@ -26,7 +25,7 @@ export class DateService {
     for (let i = 1; i <= this.getDaysInMonth(date); i++) {
       week.push(i);
       if (week.length % 7 == 0) {
-         this.month.push(week);
+         month.push(week);
          week = [];
       }
     }
@@ -34,10 +33,10 @@ export class DateService {
     while(week.length!=7){
       week.push("")
     }
-    this.month.push(week);
+    month.push(week);
 
 
-    return this.month;
+    return month;
   }
 
   getDaysInMonth(date) {
