@@ -3,19 +3,45 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class DateService {
 
-  month = [
-    [29, 30, 31, 1, 2, 3, 4],
-    [5, 6, 7, 8, 9, 10, 11],
-    [12, 13, 14, 15, 16, 17, 18],
-    [19, 20, 21, 22, 23, 24, 25],
-    [26, 27, 28, 1, 2, 3, 4],
-    [5, 6, 7, 8, 9, 10, 11],
-  ]
+  month = [];
 
-  getMonth() {
+  getMonth(date) {
+    let week = [];
+    let endPrevMonth;
+    let startDate = new Date(date.getFullYear(), date.getMonth(), 1);
+
+    //заполнение перед месяцем
+    if (startDate.getDay() != 1) {
+      if (startDate.getDay() == 0) {
+        endPrevMonth = 7;
+      } else {
+        endPrevMonth = startDate.getDay();
+      }
+      console.log(startDate);
+      for (let i = 1; i < endPrevMonth; i++) {
+        week.push("");
+      }
+    }
+    //заполнение месяца
+    for (let i = 1; i <= this.getDaysInMonth(date); i++) {
+      week.push(i);
+      if (week.length % 7 == 0) {
+         this.month.push(week);
+         week = [];
+      }
+    }
+    //заполнение после месяца
+    while(week.length!=7){
+      week.push("")
+    }
+    this.month.push(week);
+
+
     return this.month;
   }
 
-  constructor() { }
-
+  getDaysInMonth(date) {
+    let lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0);
+    return lastDay.getDate();
+  }
 }
