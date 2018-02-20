@@ -10,6 +10,8 @@ import {DateService} from "../services/date.service";
 export class AppComponent {
   month =[];
   date = new Date();
+  months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
+  monthName = this.months[this.date.getMonth()];
 
   constructor(private dateService: DateService) {}
 
@@ -17,11 +19,10 @@ export class AppComponent {
     this.month = this.dateService.getMonth(this.date);
   }
 
-  showMonth() {
-    console.log(this.month);
+  showMonth(diff) {
     this.month = [];
-
-    this.date = new Date(this.date.getFullYear(), this.date.getMonth() + 1, 1);
+    this.date = new Date(this.date.getFullYear(), this.date.getMonth() + diff, 1);
+    this.monthName = this.months[this.date.getMonth()];
     this.ngOnInit();
   }
 

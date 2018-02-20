@@ -1,8 +1,8 @@
 <div class="calendar">
-  <button id="prevMonth" (click)="showMonth()">&#9668;</button>
+  <button id="prevMonth" (click)="showMonth(-1)">&#9668;</button>
   <table>
     <caption>
-      <h1>january</h1>
+      <h1>{{monthName}}</h1>
     </caption>
     <tr>
       <th>MON</th>
@@ -17,5 +17,5 @@
       <td *ngFor="let day of week">{{day}}</td>
     </tr>
   </table>
-  <button id="nextMonth" (click)="showMonth()">&#9658;</button>
+  <button id="nextMonth" (click)="showMonth(1)">&#9658;</button>
 </div>

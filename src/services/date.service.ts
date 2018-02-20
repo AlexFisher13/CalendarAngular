@@ -30,7 +30,7 @@ export class DateService {
       }
     }
     //заполнение после месяца
-    while(week.length!=7){
+    while(week.length != 7){
       week.push("")
     }
     month.push(week);
