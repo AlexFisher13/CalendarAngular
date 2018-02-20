@@ -12,6 +12,7 @@ export class AppComponent {
   date = new Date();
   months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
   monthName = this.months[this.date.getMonth()];
+  year = this.date.getFullYear();
 
   constructor(private dateService: DateService) {}
 
@@ -23,6 +24,7 @@ export class AppComponent {
     this.month = [];
     this.date = new Date(this.date.getFullYear(), this.date.getMonth() + diff, 1);
     this.monthName = this.months[this.date.getMonth()];
+    this.year = this.date.getFullYear();
     this.ngOnInit();
   }
 

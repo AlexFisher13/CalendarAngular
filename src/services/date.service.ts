@@ -24,17 +24,18 @@ export class DateService {
     //заполнение месяца
     for (let i = 1; i <= this.getDaysInMonth(date); i++) {
       week.push(i);
-      if (week.length % 7 == 0) {
+      if ((week.length % 7 == 0)) {
          month.push(week);
          week = [];
       }
     }
     //заполнение после месяца
-    while(week.length != 7){
-      week.push("")
+    if (week.length != 0) {
+      while((week.length != 7)){
+        week.push("")
+      }
+      month.push(week);
     }
-    month.push(week);
-
 
     return month;
   }

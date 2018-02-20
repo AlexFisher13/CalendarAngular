@@ -4,6 +4,9 @@
 /*red: #e66053;
 black: #4E4F4A;
 cream: #F6E9DC;*/
+html {
+  font-size: 22px;
+}
 
 body {
   background-color: #e66053;
@@ -12,5 +15,5 @@ body {
   color: #4E4F4A;
   display: grid;
   justify-content: center;
-  padding-top: 70px;
+  padding-top: 10vh;
 }
