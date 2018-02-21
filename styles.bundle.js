@@ -35,7 +35,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "/*@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);*/\n/*red: #e66053;\nblack: #4E4F4A;\ncream: #F6E9DC;*/\nhtml {\n  font-size: 22px;\n}\nbody {\n  background-color: #e66053;\n  font-family: \"Segoe UI\";\n  font-weight: bold;\n  color: #4E4F4A;\n  display: -ms-grid;\n  display: grid;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  padding-top: 10vh;\n}\n@media screen and (max-width: 900px) {\n  html {\n    font-size: 15px;\n  }\n}\n@media screen and (max-width: 600px) {\n  html {\n    font-size: 12px;\n  }\n}\n@media screen and (max-width: 400px) {\n  html {\n    font-size: 10px;\n  }\n}\n\n", ""]);
+exports.push([module.i, "/*@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);*/\n/*red: #e66053;\nblack: #4E4F4A;\ncream: #F6E9DC;*/\nhtml {\n  font-size: 22px;\n}\nbody {\n  background-color: #e66053;\n  font-family: \"Segoe UI\", sans-serif;\n  font-weight: bold;\n  color: #4E4F4A;\n  display: -ms-grid;\n  display: grid;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  padding-top: 10vh;\n}\n@media screen and (max-width: 900px) {\n  html {\n    font-size: 15px;\n  }\n}\n@media screen and (max-width: 600px) {\n  html {\n    font-size: 12px;\n  }\n}\n@media screen and (max-width: 400px) {\n  html {\n    font-size: 10px;\n  }\n}\n\n", ""]);
 
 // exports
 
