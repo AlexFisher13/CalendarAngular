@@ -2,21 +2,12 @@
 /*red: #e66053;
 black: #4E4F4A;
 cream: #F6E9DC;*/
-@font-face {
-  font-family: Montserrat-Bold;
-  src:url(fonts/Montserrat-Bold.ttf);
-}
-@font-face {
-  font-family: Montserrat-Regular;
-  src:url(fonts/Montserrat-Regular.ttf);
-}
-
 html {
   font-size: 22px;
 }
 body {
   background-color: #e66053;
-  font-family: 'Montserrat-Bold';
+  font-family: "Segoe UI";
   font-weight: bold;
   color: #4E4F4A;
   display: grid;
