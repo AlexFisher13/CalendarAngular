@@ -7,7 +7,7 @@ html {
 }
 body {
   background-color: #e66053;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-weight: bold;
   color: #4E4F4A;
   display: grid;
